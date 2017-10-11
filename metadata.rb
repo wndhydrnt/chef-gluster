@@ -10,7 +10,7 @@ depends          'lvm', '>= 1.5.1'
 
 source_url 'https://github.com/shortdudey123/chef-gluster'
 issues_url 'https://github.com/shortdudey123/chef-gluster/issues'
-chef_version '>= 12.1'
+chef_version '>= 12.1' if respond_to?(:chef_version)
 
 supports 'centos'
 supports 'ubuntu'
